@@ -1,0 +1,26 @@
+For immigrants table :
+
+It shows citizens that travelled, their original country, year of birth and gender :
+
+citizen_id : a primary key refers to citizen number ,
+country_cit : citizenship of the citizen ,
+birth_year : date of birth of the citizen,
+gender : gender of the traveller
+
+For address tavble :
+
+It shows the current address of the traveller after reaching their destination ,their visa type and method of travelling :
+
+citizen_id : a primary key refers to citizen number ,
+address : current country the citizen stays in ,
+visa_type  : type of the traveller's visa; pleasure,student,ets.. ,
+travel_mode : method of travelling; sea,air or land
+
+For date table
+
+citizen_id : a primary key refers to citizen number ,
+arrival_date : date of the traveller arrival,
+arrival_day : day of the traveller arrival,
+arrival_month : month of the traveller arrival,
+arrival_year : year of the traveller arrival
+                                                                   
