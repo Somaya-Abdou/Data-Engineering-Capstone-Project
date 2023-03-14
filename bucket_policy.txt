@@ -1,0 +1,30 @@
+Too load data to s3 bucket :
+let the bucket be controlled through acls and its policy like :
+
+{
+    "Version": "2012-10-17",
+    "Id": "PutOnlyPolicy",
+    "Statement": [
+        {
+            "Sid": "Allow_PublicPut",
+            "Effect": "Allow",
+            "Principal": {
+                "AWS": "*"
+            },
+            "Action": [
+                "s3:PutObject",
+                "s3:PutObjectAcl"
+            ],
+            "Resource": "arn:aws:s3:::capstonebucket123/*"
+        },
+        {
+            "Sid": "Statement1",
+            "Effect": "Allow",
+            "Principal": "*",
+            "Action": "s3:*",
+            "Resource": "arn:aws:s3:::capstonebucket123/*"
+        }
+    ]
+}
+
+
